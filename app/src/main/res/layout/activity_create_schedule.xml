@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:context=".CreateScheduleActivity">
+
+        <CalendarView
+            android:id="@+id/calView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:unfocusedMonthDateColor="@color/gray"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Enter muscles"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray_dark" />
+
+        <EditText
+            android:id="@+id/etExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Enter exercise"
+            android:inputType="textPersonName"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray_dark" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Enter count"
+            android:inputType="number"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray_dark" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="save"
+            android:text="Done!"
+            android:textColor="@color/gray_light" />
+
+
+    </LinearLayout>
+</ScrollView>
